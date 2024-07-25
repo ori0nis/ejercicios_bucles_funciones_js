@@ -18,4 +18,6 @@ const starWarsMovies = [
   
   
   
-  
+   for (let movie of starWarsMovies) {
+
+  }
