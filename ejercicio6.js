@@ -17,7 +17,19 @@ const starWarsMovies = [
   ];
   
   
+   let moviesObject = {};
+   
   
    for (let movie of starWarsMovies) {
+      let year = movie.releaseYear;
+      let decade = (year - (year % 10));
 
-  }
+      if (!moviesObject[decade]) {
+        moviesObject[decade] = [];
+      }
+
+        moviesObject[decade].push(movie.title);
+}
+
+  
+   console.log(moviesObject);
