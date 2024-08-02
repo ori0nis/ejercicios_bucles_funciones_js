@@ -7,14 +7,13 @@ const artists = [
     { name: 'Freddie Mercury', influences: ['Liza Minnelli', 'Jimi Hendrix', 'Aretha Franklin'] },
     { name: 'John Lennon', influences: ['Elvis Presley', 'Chuck Berry', 'Buddy Holly'] }
   ];
-
+  
   
   for (let i = 0; i < artists.length; i++) {
-        let influences = artists[i].influences;
-    for (let influence of influences) {
-        let finalLog = artists[i].name + " - " + influence;
-        console.log(finalLog);
-    }
-  }
-  
+    let influences = artists[i].influences;
+for (let influence of influences) {
+    let finalLog = artists[i].name + " - " + influence;
+    console.log(finalLog);
+}
+}
   
